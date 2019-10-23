@@ -6,19 +6,19 @@ interface IPackageConfig {
 }
 
 export default class PackageConfig {
-  private readonly _config: IPackageConfig | undefined;
+  private _config: IPackageConfig | undefined;
 
-  config(): IPackageConfig {
+  get config(): IPackageConfig {
     if (this._config !== undefined) {
       return this._config;
     }
 
     const stream = fs.readFileSync(
-      path.join(__dirname, "/../package.json"),
+      path.join(__dirname, "/../../package.json"),
       "UTF-8"
     );
 
-    return JSON.parse(stream.toString());
+    return (this._config = JSON.parse(stream.toString()));
   }
 
   get name(): string {
