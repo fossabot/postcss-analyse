@@ -1,0 +1,49 @@
+{
+  "name": "postcss-analyse",
+  "version": "1.9.0",
+  "description": "A PostCSS plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Tedman",
+    "url": "https://danieltedman.com"
+  },
+  "repository": "https://github.com/dbtedman/postcss-analyse",
+  "homepage": "https://github.com/dbtedman/postcss-analyse#readme",
+  "bugs": "https://github.com/dbtedman/postcss-analyse/issues",
+  "keywords": [
+    "css",
+    "javascript",
+    "nodejs",
+    "yarn",
+    "postcss",
+    "postcss-plugin",
+    "typescript"
+  ],
+  "main": "./build/index.js",
+  "files": [
+    "*.md",
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json && rm -rf ./build/{**/*,*}.spec.js && rm -rf ./build/acceptance && rm -rf ./build/integration",
+    "clean": "rm -rf ./build/",
+    "format": "prettier './**/*.{md,yml,yaml,json,ts,js}' --write",
+    "lint": "prettier './**/*.{md,yml,yaml,json,ts,js}' --check",
+    "release": "yarn clean && yarn build && yarn publish",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "postcss": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.19",
+    "@types/node": "12.7.1",
+    "husky": "3.0.3",
+    "jest": "24.8.0",
+    "postcss": "7.0.17",
+    "prettier": "1.18.2",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.3.0",
+    "typescript": "3.5.3"
+  }
+}

@@ -1,0 +1,18 @@
+#-------------------------------------------------------------------------------
+#
+# Prettier Ignores, https://prettier.io/docs/en/ignore.html
+#
+#-------------------------------------------------------------------------------
+
+# Fixtures used in testing that must retain current configuration.
+/acceptance/fixtures/
+
+# No need to touch any library code.
+/node_modules/
+
+# Leave generated code alone.
+/package-lock.json
+/.nyc_output/
+
+# Leave build output alone.
+/build/
