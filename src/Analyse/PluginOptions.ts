@@ -1,3 +1,1 @@
-export default interface PluginOptions {
-  bar?: string;
-}
+export default interface PluginOptions {}

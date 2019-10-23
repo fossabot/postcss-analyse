@@ -34,7 +34,7 @@ const Analyse = require("postcss-analyse");
 
 Gulp.task("css", () =>
     Gulp.src("./src/*.css")
-        .pipe(PostCSS([Analyse({})]))
+        .pipe(PostCSS([Analyse()]))
         .pipe(Gulp.dest("./dest"))
 );
 ```
