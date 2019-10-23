@@ -8,7 +8,7 @@
 
 ## Thanks
 
-Thanks to all of the [Contributors](https://github.com/dbtedman/postcss-analyse/graphs/contributors) who maintain PostCSS Prefix Wrap and [Jeff Teng](https://github.com/aj120426394) for contributing to the initial design.
+Thanks to all of the [Contributors](https://github.com/dbtedman/postcss-analyse/graphs/contributors) who maintain PostCSS Analyse.
 
 ## Continuous Integration
 
