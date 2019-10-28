@@ -1,6 +1,6 @@
-import postcss, { Root } from "postcss";
+import postcss, { Root, Rule } from "postcss";
 
-import PluginOptions from "./PluginOptions";
+import PluginOptions, { defaultPluginOptions } from "./PluginOptions";
 import PackageConfig from "./PackageConfig";
 
 interface IPluginConstructor {
@@ -13,7 +13,7 @@ export default class Plugin {
 
   constructor({ packageConfig }: IPluginConstructor) {
     this._packageConfig = packageConfig;
-    this._options = {}; // TODO: Add default options here as we are merging them.
+    this._options = defaultPluginOptions;
   }
 
   get packageConfig(): PackageConfig {
@@ -30,8 +30,19 @@ export default class Plugin {
     if (options !== undefined) {
       this.options = options;
     }
-    // TODO: Now process the css.
-    console.log(root.type);
+
+    root.walkRules((rule: Rule) => {
+      console.log(rule.selector);
+      if (rule.nodes !== undefined) {
+        for (const node of rule.nodes) {
+          if (node.source !== undefined && node.source.input !== undefined) {
+            console.log(node);
+            console.log(node.type);
+            console.log(node.source.input);
+          }
+        }
+      }
+    });
   }
 
   prepare(): postcss.Plugin<PluginOptions> {

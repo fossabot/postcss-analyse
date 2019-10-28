@@ -28,3 +28,6 @@ script:
   - "yarn build"
   - "yarn lint"
   - "yarn test"
+
+after_script:
+  - 'codecov --token="${CODECOV_TOKEN}"'

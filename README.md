@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/dbtedman/postcss-analyse.svg?branch=master)](https://travis-ci.org/dbtedman/postcss-analyse)
 [![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg)](https://snyk.io/test/github/dbtedman/postcss-analyse)
+[![Maintainability](https://api.codeclimate.com/v1/badges/99c374dda535ed9ecdc8/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
+[![codecov](https://codecov.io/gh/dbtedman/postcss-analyse/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/postcss-analyse)
 
 A [PostCSS](https://postcss.org) plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.
 
@@ -11,13 +13,15 @@ A [PostCSS](https://postcss.org) plugin which analyses property values to give d
 
 ### Install
 
-Using [Yarn](https://yarnpkg.com)
+> This plugin has not yet published, these instructions therefore are incorrect for now.
+
+Using [Yarn](https://yarnpkg.com/en/package/postcss-analyse)
 
 ```bash
-yarn add postcss-analyse --save --exact --dev
+yarn add postcss-analyse --exact --dev
 ```
 
-Using [NPM](https://www.npmjs.com)
+Using [NPM](https://www.npmjs.com/package/postcss-analyse)
 
 ```bash
 npm install postcss-analyse --save-dev --save-exact
