@@ -16,3 +16,6 @@
 
 # Leave build output alone.
 /build/
+
+# Test results.
+/coverage/

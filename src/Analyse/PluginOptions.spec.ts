@@ -1,0 +1,3 @@
+describe("PluginOptions", () => {
+  it.skip("", () => {});
+});
