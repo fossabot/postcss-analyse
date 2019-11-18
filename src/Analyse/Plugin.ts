@@ -50,6 +50,7 @@ export default class Plugin {
       }
     });
 
+    // TODO: The reporting kind will be configurable.
     this._reporting.console(this.parser);
   }
 

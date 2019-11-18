@@ -39,7 +39,7 @@
     "@types/chroma-js": "1.4.3",
     "@types/jest": "24.0.19",
     "@types/node": "12.7.1",
-    "bootstrap": "4.3.1",
+    "bulma": "0.8.0",
     "chroma-js": "2.1.0",
     "codecov": "3.6.1",
     "console-table-printer": "1.1.6",

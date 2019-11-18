@@ -23,7 +23,9 @@ export default class Reporting {
     p.addRow(
       {
         category: "Sizes",
-        count: parser.sizes.size
+        count: parser.sizes.size,
+        warningMax: MAX_OK_SIZE,
+        errorMax: MAX_WARNING_SIZE
       },
       { color: sizesStatusColour }
     );
@@ -41,7 +43,9 @@ export default class Reporting {
     p.addRow(
       {
         category: "Colours",
-        count: parser.colours.size
+        count: parser.colours.size,
+        warningMax: MAX_OK_COLOUR,
+        errorMax: MAX_WARNING_COLOUR
       },
       { color: coloursStatusColour }
     );

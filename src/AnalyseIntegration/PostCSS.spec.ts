@@ -10,7 +10,7 @@ describe("PostCSS", () => {
   // TODO: Just a test file, could be anything.
   const filePath = path.join(
     __dirname,
-    "/../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    "/../../node_modules/bulma/css/bulma.min.css"
   );
   const exampleCSS = fs
     .readFileSync(filePath, "UTF-8")
