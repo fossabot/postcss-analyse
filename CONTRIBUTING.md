@@ -12,11 +12,11 @@ Thanks to all of the [Contributors](https://github.com/dbtedman/postcss-analyse/
 
 ## Continuous Integration
 
-Provided by [Travis CI](https://travis-ci.org/dbtedman/postcss-analyse), run on every commit and pull request.
+Provided by [GitHub Actions](https://github.com/dbtedman/postcss-analyse/actions?workflow=Test), run on every commit and pull request.
 
 ## Code Formatting
 
-Code formatting support provided by [Prettier](https://prettier.io/) and [ESLint](http://eslint.org/).
+Code formatting support provided by [Prettier](https://prettier.io/).
 
 ```bash
 yarn format

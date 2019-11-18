@@ -1,19 +1,26 @@
-import postcss, { Root, Rule } from "postcss";
-
+import postcss, { Declaration, Root, Rule } from "postcss";
 import PluginOptions, { defaultPluginOptions } from "./PluginOptions";
 import PackageConfig from "./PackageConfig";
+import Parser from "./Parser";
+import Reporting from "./Reporting";
 
 interface IPluginConstructor {
   packageConfig: PackageConfig;
+  parser: Parser;
+  reporting: Reporting;
 }
 
 export default class Plugin {
   private readonly _packageConfig: PackageConfig;
   private _options: PluginOptions;
+  private _parser: Parser;
+  private _reporting: Reporting;
 
-  constructor({ packageConfig }: IPluginConstructor) {
+  constructor({ packageConfig, parser, reporting }: IPluginConstructor) {
     this._packageConfig = packageConfig;
+    this._parser = parser;
     this._options = defaultPluginOptions;
+    this._reporting = reporting;
   }
 
   get packageConfig(): PackageConfig {
@@ -26,23 +33,25 @@ export default class Plugin {
     this._options = { ...value };
   }
 
+  get parser(): Parser {
+    return this._parser;
+  }
+
   run(root: Root, options?: PluginOptions) {
     if (options !== undefined) {
       this.options = options;
     }
 
     root.walkRules((rule: Rule) => {
-      console.log(rule.selector);
       if (rule.nodes !== undefined) {
         for (const node of rule.nodes) {
-          if (node.source !== undefined && node.source.input !== undefined) {
-            console.log(node);
-            console.log(node.type);
-            console.log(node.source.input);
-          }
+          this.parser.selectorDeclaration(rule.selector, <Declaration>node);
         }
       }
     });
+
+    // TODO: The reporting kind will be configurable.
+    this._reporting.console(this.parser);
   }
 
   prepare(): postcss.Plugin<PluginOptions> {

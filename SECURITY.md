@@ -10,20 +10,20 @@
 
 [![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg)](https://snyk.io/test/github/dbtedman/postcss-analyse)
 
-Provided by [Snyk](https://snyk.io/test/github/dbtedman/postcss-analyse) and [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities) for validating NPM dependencies.
+Provided by [Snyk](https://snyk.io/test/github/dbtedman/postcss-analyse) for validating package dependencies.
 
 ## Security Disclosure Policy
 
-Email [dbtedman@gmail.com](mailto:dbtedman@gmail.com) with details about the security issue.
+Email [dbtedman@gmail.com](mailto:dbtedman@gmail.com) with details about the security issue or raise a [GitHub Issue](https://github.com/dbtedman/postcss-analyse/issues) and tag it as **Security**.
 
 ## Security Update Policy
 
-_Content to come._
+Best efforts will be taken to apply code fixes or update vulnerable packages as soon as is possible, this will usually be within a couple of days.
 
 ## Security Related Configuration
 
-_Content to come._
+None currently.
 
 ## Known Security Gaps and Future Enhancements
 
-_Content to come._
+Look at [GitHub issues tagged **Security**](https://github.com/dbtedman/postcss-analyse/labels/security).
