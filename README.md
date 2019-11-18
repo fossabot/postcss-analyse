@@ -1,7 +1,7 @@
 # [PostCSS Analyse](https://github.com/dbtedman/postcss-analyse)
 
 [![Package Version](https://badgen.net/npm/v/postcss-analyse?label=Latest&style=flat)](https://www.npmjs.com/package/postcss-analyse)
-[![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat&color=blue)](https://www.npmjs.com/package/postcss-analyse)
+[![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Package License](https://badgen.net/npm/license/postcss-analyse?label=License&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg?style=flat-square)](https://snyk.io/test/github/dbtedman/postcss-analyse)
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa0627fb4cfdc2a6dd04/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
