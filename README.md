@@ -20,8 +20,6 @@ A [PostCSS](https://postcss.org) plugin which analyses property values to give d
 
 ### Install
 
-> This plugin has not yet published, these instructions therefore are incorrect for now.
-
 Using [Yarn](https://yarnpkg.com/en/package/postcss-analyse)
 
 ```bash
