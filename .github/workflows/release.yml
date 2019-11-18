@@ -35,4 +35,4 @@ jobs:
 
       - name: "Release"
         # run: "yarn publish --not-interactive --new-version ${RELEASE_REFERENCE/refs\/tags\//}"
-        run: "yarn publish"
+        run: "yarn publish --not-interactive --verbose"
