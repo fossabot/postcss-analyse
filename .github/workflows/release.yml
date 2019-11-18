@@ -12,7 +12,6 @@ on:
 
 env:
   CI: true
-  RELEASE_REFERENCE: "${{ github.ref }}"
   NPM_AUTH_TOKEN: "${{ secrets.NPM_TOKEN }}"
 
 jobs:
@@ -34,5 +33,4 @@ jobs:
         run: "yarn clean && yarn build"
 
       - name: "Release"
-        # run: "yarn publish --not-interactive --new-version ${RELEASE_REFERENCE/refs\/tags\//}"
-        run: "yarn publish --not-interactive --verbose"
+        run: "yarn publish --not-interactive"
