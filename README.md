@@ -4,7 +4,7 @@
 [![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Package License](https://badgen.net/npm/license/postcss-analyse?label=License&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg?style=flat-square)](https://snyk.io/test/github/dbtedman/postcss-analyse)
-[![Maintainability](https://api.codeclimate.com/v1/badges/fa0627fb4cfdc2a6dd04/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/99c374dda535ed9ecdc8/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
 [![Codecov](https://codecov.io/gh/dbtedman/postcss-analyse/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/postcss-analyse)
 [![GitHub Actions](https://github.com/dbtedman/postcss-analyse/workflows/Test/badge.svg)](https://github.com/dbtedman/postcss-analyse/actions?workflow=Test)
 
