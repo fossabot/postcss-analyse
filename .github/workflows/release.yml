@@ -29,7 +29,10 @@ jobs:
       - name: "Install"
         run: "yarn install --no-audit"
 
-      - name: "Prepare"
+      - name: "Verify"
+        run: "yarn lint && yarn test"
+
+      - name: "Build"
         run: "yarn clean && yarn build"
 
       - name: "Release"
