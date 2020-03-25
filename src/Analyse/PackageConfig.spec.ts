@@ -12,9 +12,9 @@ describe("PackageConfig", () => {
     fs.readFileSync.mockReturnValue({
       toString: () => {
         return JSON.stringify({
-          name: projectName
+          name: projectName,
         });
-      }
+      },
     });
 
     expect(packageConfig.name).toEqual(projectName);

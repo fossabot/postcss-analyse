@@ -27,10 +27,13 @@ export default class Plugin {
     return this._packageConfig;
   }
 
+  get options(): PluginOptions {
+    return this._options;
+  }
+
   set options(value: PluginOptions) {
     // Overwrite default option properties with our user provided ones.
-    // TODO: Validate config first?
-    this._options = { ...value };
+    this._options = { ...this._options, ...value };
   }
 
   get parser(): Parser {
@@ -50,14 +53,13 @@ export default class Plugin {
       }
     });
 
-    // TODO: The reporting kind will be configurable.
-    this._reporting.console(this.parser);
+    this._reporting.console(this.parser, this.options);
   }
 
   prepare(): postcss.Plugin<PluginOptions> {
     return postcss.plugin<PluginOptions>(
       this.packageConfig.name,
-      options => (root: Root) => this.run(root, options)
+      (options) => (root: Root) => this.run(root, options)
     );
   }
 }

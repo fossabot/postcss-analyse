@@ -1,12 +1,12 @@
 # [PostCSS Analyse](https://github.com/dbtedman/postcss-analyse)
 
-[![Package Version](https://badgen.net/npm/v/postcss-analyse?label=Latest&style=flat)](https://www.npmjs.com/package/postcss-analyse)
-[![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat)](https://www.npmjs.com/package/postcss-analyse)
-[![Package License](https://badgen.net/npm/license/postcss-analyse?label=License&style=flat)](https://www.npmjs.com/package/postcss-analyse)
-[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg?style=flat-square)](https://snyk.io/test/github/dbtedman/postcss-analyse)
-[![Maintainability](https://api.codeclimate.com/v1/badges/99c374dda535ed9ecdc8/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
 [![Codecov](https://codecov.io/gh/dbtedman/postcss-analyse/branch/master/graph/badge.svg)](https://codecov.io/gh/dbtedman/postcss-analyse)
 [![GitHub Actions](https://github.com/dbtedman/postcss-analyse/workflows/Test/badge.svg)](https://github.com/dbtedman/postcss-analyse/actions?workflow=Test)
+[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/postcss-analyse/badge.svg?style=flat-square)](https://snyk.io/test/github/dbtedman/postcss-analyse)
+[![Maintainability](https://api.codeclimate.com/v1/badges/99c374dda535ed9ecdc8/maintainability)](https://codeclimate.com/github/dbtedman/postcss-analyse/maintainability)
+[![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat)](https://www.npmjs.com/package/postcss-analyse)
+[![Package License](https://badgen.net/npm/license/postcss-analyse?label=License&style=flat)](https://www.npmjs.com/package/postcss-analyse)
+[![Package Version](https://badgen.net/npm/v/postcss-analyse?label=Latest&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 
 A [PostCSS](https://postcss.org) plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.
 
@@ -56,6 +56,24 @@ The minimal required configuration is the prefix selector, as shown in the above
 
 ```javascript
 Analyse();
+```
+
+### Colours
+
+```javascript
+Analyse({
+    maxOkColour: 50,
+    maxWarningColour: 100,
+});
+```
+
+### Sizes
+
+```javascript
+Analyse({
+    maxOkSize: 50,
+    maxWarningSize: 100,
+});
 ```
 
 ## Want to lean more?

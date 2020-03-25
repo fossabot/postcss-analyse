@@ -1,20 +1,24 @@
 import { Table } from "console-table-printer";
-import Parser from "./Parser";
 
-const MAX_OK_SIZE = 50;
-const MAX_WARNING_SIZE = 100;
-const MAX_OK_COLOUR = 50;
-const MAX_WARNING_COLOUR = 100;
+import Parser from "./Parser";
+import PluginOptions from "Analyse/PluginOptions";
 
 export default class Reporting {
-  console(parser: Parser) {
+  console(parser: Parser, options: PluginOptions) {
+    const {
+      maxOkColour,
+      maxOkSize,
+      maxWarningColour,
+      maxWarningSize,
+    } = options;
+
     const p = new Table();
 
     let sizesStatusColour;
 
-    if (parser.sizes.size < MAX_OK_SIZE) {
+    if (parser.sizes.size < maxOkSize) {
       sizesStatusColour = "green";
-    } else if (parser.sizes.size < MAX_WARNING_SIZE) {
+    } else if (parser.sizes.size < maxWarningSize) {
       sizesStatusColour = "yellow";
     } else {
       sizesStatusColour = "red";
@@ -24,17 +28,17 @@ export default class Reporting {
       {
         category: "Sizes",
         count: parser.sizes.size,
-        warningMax: MAX_OK_SIZE,
-        errorMax: MAX_WARNING_SIZE
+        warningMax: maxOkSize,
+        errorMax: maxWarningSize,
       },
       { color: sizesStatusColour }
     );
 
     let coloursStatusColour;
 
-    if (parser.colours.size < MAX_OK_COLOUR) {
+    if (parser.colours.size < maxOkColour) {
       coloursStatusColour = "green";
-    } else if (parser.colours.size < MAX_WARNING_COLOUR) {
+    } else if (parser.colours.size < maxWarningColour) {
       coloursStatusColour = "yellow";
     } else {
       coloursStatusColour = "red";
@@ -44,8 +48,8 @@ export default class Reporting {
       {
         category: "Colours",
         count: parser.colours.size,
-        warningMax: MAX_OK_COLOUR,
-        errorMax: MAX_WARNING_COLOUR
+        warningMax: maxOkColour,
+        errorMax: maxWarningColour,
       },
       { color: coloursStatusColour }
     );

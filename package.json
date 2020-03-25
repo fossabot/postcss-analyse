@@ -36,19 +36,19 @@
     "postcss": "*"
   },
   "devDependencies": {
-    "@types/chroma-js": "1.4.3",
-    "@types/jest": "24.0.23",
-    "@types/node": "12.12.8",
-    "bulma": "0.8.0",
+    "@types/chroma-js": "2.0.0",
+    "@types/jest": "25.1.4",
+    "@types/node": "12.12.31",
+    "bulma": "0.8.1",
     "chroma-js": "2.1.0",
-    "codecov": "3.6.1",
-    "console-table-printer": "1.1.20",
-    "husky": "3.1.0",
-    "jest": "24.9.0",
+    "codecov": "3.6.5",
+    "console-table-printer": "1.1.67",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
     "postcss": "7.0.17",
-    "prettier": "1.19.1",
-    "ts-jest": "24.1.0",
-    "ts-node": "8.5.2",
-    "typescript": "3.7.2"
+    "prettier": "2.0.2",
+    "ts-jest": "25.2.1",
+    "ts-node": "8.8.1",
+    "typescript": "3.8.3"
   }
 }

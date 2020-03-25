@@ -19,7 +19,7 @@ const sizeUnitsFixture = [
   "vh", // 1% of the viewport's height.
   "vmin", // 1% of the viewport's smaller dimension.
   "vmax", // 1% of the viewport's larger dimension.
-  "%"
+  "%",
 ];
 
 // @see https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
@@ -86,7 +86,7 @@ const coloursFixture = [
   "violet",
   "Wheat",
   "White",
-  "WHITESMOKE"
+  "WHITESMOKE",
 ];
 
 // prettier-ignore
@@ -94,8 +94,8 @@ const countFixture = [100, 1, -1, -100, 10.5, -10.5, .5, -.5];
 
 const sizesFixture: Array<string> = [];
 
-sizeUnitsFixture.forEach(unit => {
-  countFixture.forEach(count => {
+sizeUnitsFixture.forEach((unit) => {
+  countFixture.forEach((count) => {
     sizesFixture.push(`${count}${unit}`);
   });
 });
@@ -109,12 +109,12 @@ const validate = (
   should: Array<string>,
   shouldNot?: Array<string>
 ) => {
-  fixture.forEach(size => {
+  fixture.forEach((size) => {
     const parser = new Parser();
     parser.categoriseValue(size);
 
     if (shouldNot === undefined) {
-      shouldNot = all.filter(type => !should.includes(type));
+      shouldNot = all.filter((type) => !should.includes(type));
     }
 
     should.forEach((listName: string) => {

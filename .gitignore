@@ -21,3 +21,6 @@
 /build/
 postcss-analyse-*.tgz
 /package/
+
+# Log files
+/*.log
