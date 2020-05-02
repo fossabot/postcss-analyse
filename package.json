@@ -1,6 +1,6 @@
 {
   "name": "postcss-analyse",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A PostCSS plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.",
   "license": "MIT",
   "author": {
