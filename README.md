@@ -7,6 +7,7 @@
 [![Package Downloads (Weekly)](https://badgen.net/npm/dw/postcss-analyse?label=Downloads&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Package License](https://badgen.net/npm/license/postcss-analyse?label=License&style=flat)](https://www.npmjs.com/package/postcss-analyse)
 [![Package Version](https://badgen.net/npm/v/postcss-analyse?label=Latest&style=flat)](https://www.npmjs.com/package/postcss-analyse)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdbtedman%2Fpostcss-analyse.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdbtedman%2Fpostcss-analyse?ref=badge_shield)
 
 A [PostCSS](https://postcss.org) plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.
 
@@ -82,3 +83,7 @@ Analyse({
 -   See our [Changelog](CHANGELOG.md) for details on which features, improvements, and bug fixes have been implemented
 -   See our [License](LICENSE.md) for details on how you can use the code in this repository.
 -   See our [Security Guide](SECURITY.md) for details on how security is considered.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdbtedman%2Fpostcss-analyse.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdbtedman%2Fpostcss-analyse?ref=badge_large)
